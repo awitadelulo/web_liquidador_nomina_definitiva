@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Trabajador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>{{mensaje}}</h1>
+    <table>
+        <tr>
+            <th>Concepto</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>Identificación del trabajador</td>
+            <td>{{trabajador.id}}</td>
+        </tr>
+        <tr>
+            <td>Salario base</td>
+            <td>{{trabajador.salary_base}}</td>
+        </tr>
+        <tr>
+            <td>Meses trabajados</td>
+            <td>{{trabajador.months_worked}}</td>
+        </tr>
+        <tr>
+            <td>Días de vacaciones</td>
+            <td>{{trabajador.vacation_day}}</td>
+        </tr>
+        <tr>
+            <td>Horas extras diurnas</td>
+            <td>{{trabajador.hours_extra}}</td>
+        </tr>
+        <tr>
+            <td>Horas extras nocturnas</td>
+            <td>{{trabajador.hours_extra_nigth}}</td>
+        </tr>
+        <tr>
+            <td>Días faltantes del contrato</td>
+            <td>{{trabajador.days_finish}}</td>
+        </tr>
+        <tr>
+            <td>Liquidación total</td>
+            <td>{{liquidacion_total}}</td>
+        </tr>
+    </table>
+    <div class="button-container">
+        <button type="button" onclick="window.location.href='/'">Volver al menú</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .message {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        .sub-message {
+            font-size: 18px;
+            color: #777777;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">Eliminación correcta</div>
+        <div class="sub-message">Se ha eliminado el trabajador con la cédula <span class="highlight">{{numero_cedula}}</span></div>
+        <button type="button" onclick="window.location.href='/'">Volver al menú</button>
+    </div>
+</body>
+</html>

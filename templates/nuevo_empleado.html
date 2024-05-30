@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Empleado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: block;
+        }
+        button {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 20px;
+            color: #28a745;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nuevo Empleado</h1>
+        <form method="post" action="/crear_nuevo_empleado">
+            <label for="id_empleado">ID del Empleado:</label>
+            <input type="text" id="id_empleado" name="id_empleado" required>
+
+            <label for="salario_base">Salario Base:</label>
+            <input type="number" id="salario_base" name="salario_base" required>
+
+            <label for="meses_trabajados">Meses Trabajados:</label>
+            <input type="number" id="meses_trabajados" name="meses_trabajados" required>
+
+            <label for="dias_vacaciones">Días de Vacaciones Pendientes:</label>
+            <input type="number" id="dias_vacaciones" name="dias_vacaciones" placeholder="0 si no debe vacaciones" required>
+
+            <label for="horas_extras_diurnas">Horas Extras Diurnas:</label>
+            <input type="number" id="horas_extras_diurnas" name="horas_extras_diurnas" placeholder="0 si no tiene horas extras" required>
+
+            <label for="horas_extras_nocturnas">Horas Extras Nocturnas:</label>
+            <input type="number" id="horas_extras_nocturnas" name="horas_extras_nocturnas" placeholder="0 si no tiene horas extras" required>
+
+            <label for="dias_faltantes_contrato">Días Faltantes del Contrato:</label>
+            <input type="number" id="dias_faltantes_contrato" name="dias_faltantes_contrato" placeholder="0 si no faltan días del contrato" required>
+
+            <button type="submit">Guardar</button>
+        </form>    
+    </div>
+</body>
+</html>
+
+

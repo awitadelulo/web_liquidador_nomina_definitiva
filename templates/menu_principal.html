@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 10px auto;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Empleados</h1>
+        <button type="button" onclick="window.location.href='/nuevo_empleado'">Nuevo Empleado</button>
+        <button type="button" onclick="window.location.href='/seleccionar_empleado'">Seleccionar Empleado</button>
+        <button type="button" onclick="window.location.href='/eliminar_empleado'">Eliminar Empleado</button>
+        <button type="button" onclick="window.location.href='/modificar_empleado'">Modificar Empleado</button>
+        <button type="button" onclick="window.location.href='/liquidacion_empleado'">Liquidación Empleado</button>
+    </div>
+</body>
+</html>
