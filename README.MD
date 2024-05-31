@@ -18,8 +18,8 @@ sale de la empresa, por despido, renuncia, finalización de contrado, entre otro
 
 ## ¿Qué necesitas para que funcione?
 
-# Tener instalado Kivy
-# Tener instalado Flask
+-Tener instalado Kivy
+-Tener instalado Flask
 
 ## ¿Cómo se usa?
 
