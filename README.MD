@@ -2,35 +2,28 @@
 
 ## Elaborado por: 
 
-Marcello Maccanti
-Sebastian Buitrago Quintero
+#Marcello Maccanti
+#Sebastian Buitrago Quintero
 
 ## Optimizado para web por: 
-
-Walter Bedoya Perez
-David 
+ 
+# Walter Bedoya Perez
+# David 
 
 ## ¿Qué es y para qué es?
 
 El proyecto es una calculadora de liquidacion definitiva; se utiliza para calcular el pago de liquidación cuando empleado
 sale de la empresa, por despido, renuncia, finalización de contrado, entre otros.
 
+## ¿Qué necesitas para que funcione?
+
+# Tener instalado Kivy
+# Tener instalado Flask
+
 ## ¿Cómo se usa?
 
-En esta etapa del proyecto el codigo tiene una interfaz en la que solo se necesita clonar el proyecto para corrrerlo y se utiliza con el comando src/console_basic/interfaz.py
-
-Y una interfaz por consola, para corrrerlo se utiliza con el comando src/console/interfaz.py. 
-
-para correr las pruebas unitarias se utiliza el comando tests\liquidacionTest.py
-
-librerias a tener en cuenta: kivy, unittest, sys.
-La libreria kivy nos proporciona los medios para crear una interfaz amigable con el usuario.
-
-La libreria unittest nos permite correr las prubas unitarias; y la libreria sys nos permite importar clases de otras carpetas
-
-El codigo lanza una serie de preguntas necesarias para ejecutar las operaciones por consola; el cuales tiene, salario base, dias de vacaciones,
-cesantias, entre otras.
-
-
-
-
+1. Antes que nada debes editar el archivo SecretConfig, puedes hacerlo desde github, debes ingresar los datos de acceso de tu base de datos (dejando el PGPORT intacto).
+2. Para correrlo en la web primero debes clonar el repositorio en tu computadora, abriendo el git bash y escribiendo  `git clone https://github.com/awitadelulo/web_liquidador_nomina_definitiva.git`
+2. Luego deberas pararte en el archivo escribiendo en git bash `cd web_liquidador_nomina_definitiva`
+3. Ahora escribes `py app.py` en el git bash, esto te dara un link `Running on 'aqui estara el link que debes copiar y pegar en el buscador' `
+4. Ya en la web podras usar la calculadora
