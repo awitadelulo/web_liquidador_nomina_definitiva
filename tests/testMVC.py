@@ -79,21 +79,5 @@ class TestWorkerController(unittest.TestCase):
         self.assertRaises(calculateLogic.valor_actualizar_nopresente, ControllerWorker.modifacarWorker2 , trabajador.id,"hour",340000)
 
         
-    
-
-
-        
-    
-
-    
-
-
-        
-        """trabajador2 = worker(id=321, salary_base=5000000, months_worked=6, vacation_days=10,
-                             hours_extra=5, hours_extra_nigth=2, days_finish=0)
-        ControllerWorker.Insertarworker(trabajador2)"""
-
-
-
 if __name__ == "__main__":
     unittest.main()

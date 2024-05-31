@@ -1,10 +1,14 @@
 import psycopg2
 #import SecretConfig
-
+import sys
+import os
+sys.path.append("src")
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from model.calculateLogic import Settlementcalculator, SalarybaseExcepction, Months_workendExcepction, worker
 from model.calculateLogic import worker as wolker
 from model.calculateLogic import error_llaveprimaria
-from SecretConfig import *
+from controller.SecretConfig import *
+
 class ControllerWorker:
 
     def CreateTabla(): 
