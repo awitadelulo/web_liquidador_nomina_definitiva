@@ -18,8 +18,9 @@ sale de la empresa, por despido, renuncia, finalización de contrado, entre otro
 
 ## ¿Qué necesitas para que funcione?
 
--Tener instalado Kivy
--Tener instalado Flask
+-Tener instalado Kivy:  `pip install kivy[base]`
+-Tener instalado Flask: `pip install flask`
+-Tener instalado psycopg2: `pip install psycopg2`
 
 ## ¿Cómo se usa?
 
