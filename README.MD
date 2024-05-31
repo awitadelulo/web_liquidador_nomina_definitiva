@@ -2,16 +2,17 @@
 
 ## Elaborado por: 
 
-#Marcello Maccanti
-#Sebastian Buitrago Quintero
+- Marcello Maccanti
+- Sebastian Buitrago Quintero
 
 ## Optimizado para web por: 
  
-# Walter Bedoya Perez
-# David 
+- Walter Bedoya Perez
+- David lópez Rivera
 
 ## ¿Qué es y para qué es?
 
+Puedes guardar en la base de datos todos tus empleados y cuando desees calcular el pago de su liquidacion lo podras hacer seleccionandolos por su id. 
 El proyecto es una calculadora de liquidacion definitiva; se utiliza para calcular el pago de liquidación cuando empleado
 sale de la empresa, por despido, renuncia, finalización de contrado, entre otros.
 
@@ -27,3 +28,5 @@ sale de la empresa, por despido, renuncia, finalización de contrado, entre otro
 2. Luego deberas pararte en el archivo escribiendo en git bash `cd web_liquidador_nomina_definitiva`
 3. Ahora escribes `py app.py` en el git bash, esto te dara un link `Running on 'aqui estara el link que debes copiar y pegar en el buscador' `
 4. Ya en la web podras usar la calculadora
+
+
